@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+		<title>twoSite</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.5.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+  		$('.bxslider').bxSlider({
+  			auto: true,
+  			controls: false,
+
+  		});
+	});
+	</script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			
+
+			$('#touch-menu').click(function(){
+				$('nav ul').slideToggle(500);
+			});
+			$(window).resize(function(){
+				if ($(window).width() > 500) {
+					$ ('nav ul').removeAttr('style');
+				} 
+			});
+		});
+	</script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			
+
+			$('#touch-menu').click(function(){
+				$('nav ul').slideToggle(fast);
+				
+			});
+			$(window).resize(function(){
+				if ($(window).width() > 500) {
+					$ ('nav ul').removeAttr('style');
+				} 
+			});
+		});
+	</script>
+	<script>
+    $(document).ready(function() {
+        var RBStickyNav = $('.RBsticky-element').offset().top;
+        var stickyNav = function() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > RBStickyNav) {
+                $('.RBsticky-element').addClass('RBSticky');
+            } else {
+                $('.RBsticky-element').removeClass('RBSticky');
+            }
+        };
+        stickyNav();
+        $(window).scroll(function() {
+            stickyNav();
+        });
+    });
+</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="slider">
+					<ul class="bxslider">
+  						<li>
+  							<img class="img" src="images/header.jpg" alt="header" />
+  								<h2 class="p1">Welcome to my profile</h2>
+								<h1>I'M JOHN DOE</h1>
+								<h4>Professional web developer</h4>
+						</li>
+  						<li>
+  							<img class="img" src="images/header2.jpg" alt="header" />
+  								<h2 class="p3">Need an awesome work?</h2>
+								<h1>HIRE ME TODAY</h1>
+								<h4>Awesome services are waiting for you!</h4>
+						</li>
+  						<li>
+  							<img class="img" src="images/header3.jpg" alt="header" />
+  								<h2 class="p5">Want to get solution?</h2>
+								<h1>I'M CREATIVE</h1>
+								<h4>Can help you to solve any development problem</h4>
+						</li>
+					</ul>
+		</div><!--end slider-->
+		<div class="obj">
+			<div class="container  RBsticky-element">
+			<a href="#" id="touch-menu">
+				<i class="fa fa-bars"></i>
+			</a>
+				<nav>
+					<ul class="nav clearfix">
+						<li>
+							<a href="#top">
+								<i class="fa fa-home"></i>
+								WELCOME
+							</a>
+						</li>
+						<li>
+							<a href="#s_2">
+								<i class="fa fa-user"></i>
+								ABOUT
+							</a>
+						</li>
+						<li>
+							<a href="#s_3">
+								<i class="fa fa-graduation-cap"></i>
+									RESUME
+							</a>
+						</li>
+						<li>
+							<a href="#s_4">
+								<i class="fa fa-briefcase"></i>
+									PORTFOLIO
+							</a>
+						</li>
+						<li>
+							<a href="#s_5">
+								<i class="fa fa-quote-left"></i>
+									TESTIMONIAL
+							</a>
+						</li>
+						<li>
+							<a href="#s_6">
+								<i class="fa fa-rocket"></i>
+									CONTACT
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div><!--end container-->
+		</div><!--end obj-->
+		<div class="content">
+			<section id="s_2">
+				<div class="clearfix">
+					<h3>ABOUT ME</h3>
+						<img class="str" src="images/str.png">
+							<div class="p">
+								<p>
+								Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.
+								</p>
+							</div>
+			
+				</div>
+			</section>
+		</div><!--end content-->
+
+		<div class="wer clearfix">
+			<div class="effect eff-2-2">
+			  	<div class="prob">
+			  		<i class="fa fa-desktop"></i>
+			  		<h5>WEB DESIGN</h5>
+			  	</div><!--end prob1-->
+  				<div class="caption">
+    				<h4>1</h4>
+    				<div class="ret"><img src="images/desktop.png"></div>
+				    <p>
+						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.
+					</p>    
+  				</div><!--end caption1-->
+			</div> <!--end effect 1 eff-2-2-->
+			<div class="effect eff-2-2">
+  				<div class="prob">
+				  	<i class="fa fa-paint-brush"></i>
+				  	<h5>GRAPHIC DESIGN</h5>
+  				</div><!--end prob2-->
+  				<div class="caption">
+				    <h4>2</h4>
+				    <div class="ret"><img src="images/paint.png"></div>
+				    <p>
+						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.
+					</p>   
+ 				 </div><!--end caption2-->
+			</div> <!--end effect 2 eff-2-2-->
+			<div class="effect eff-2-2 ecg">
+  				<div class="prob">
+				  	<i class="fa fa-link"></i>
+				  	<h5>PLUGIN DEVELOPMENT</h5>
+  				</div><!--end prob3-->
+  				<div class="caption">
+				    <h4>3</h4>
+				    <div class="ret"><img src="images/link2.png"></div>
+				    <p>
+						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.
+					</p>    
+  				</div><!--end caption3-->
+			</div> <!--end effect 3 eff-2-2-->
+		</div> <!--end wer-->
+		
+		 <div class="paralax">
+     		<div class="rut"></div>
+		     	<h1>
+		     		"Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible."
+		     	</h1>
+     	</div><!--end paralax-->
+
+     	<div class="content">
+			<section id="s_3">
+				<div class="clearfix">
+					<h3>RESUME</h3>
+						<img class="str" src="images/str.png">
+							<div class="p">
+								<p>
+								Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.
+								</p>
+							</div>
+			
+				</div>
+			</section>
+		</div><!--end content-->
+
+		<div class="colon">
+			<div class="clearfix">
+				<div class="col"></div>
+				<div class="col col-1">
+					<h4>EDUCATION</h4>
+						<div class="pol">
+							<a href="#">
+								<h5>Bachelor in Multimidia</h5>
+							</a>
+								<p>Dafodil International University (2013-Present)</p>
+						</div>
+						<div class="pol">
+
+							<a href="#"><h5>Higher Secondary School Cerificate</h5></a>
+							<p>Kaliganj College (2011-2013)</p>
+						</div>
+						<div class="pol">
+							<a href="#"><h5>Secondary School Certificate</h5></a>
+							<p>Nalta High School (2009-2011)</p>
+						</div>
+					
+				</div><!--end col-1 -->
+				<div class="col col-2">
+					<h4>EXPERIENCES</h4>
+						<div class="pol">
+							<a href="#"><h5>Senior WordPress Developer</h5></a>
+							<p class="min">Nexa Solution (2014-Present)</p>
+							<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+						</div>
+						<div class="pol">
+							<a href="#"><h5>Senior Plugin Developer</h5></a>
+							<p class="min">Limition Studio (2012-2014)</p>
+							<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+						</div>
+						<div class="pol">
+							<a href="#"><h5>Senior WordPress Developer</h5></a>
+							<p class="min">Nexa Solution (2014-Present)</p>
+							<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+						</div>
+				</div><!--end col-2 -->
+			</div>
+			
+		</div><!--end colon -->
+		<div class="button">
+			<button type="button"  class="full"> DOWNLOAD FULL RESUME </button>
+			<button class="hire" type="button"> HIRE ME NOW </button>
+		</div><!--end button-->
+     	
+		<div class="content">
+			<section id="s_4">
+				<div class="clearfix">
+					<h3>PORTFOLIO</h3>
+						<img class="str" src="images/str.png">
+				</div>
+				<div class="menu2">
+					<ul>
+						<a href="#">
+							<li>ALL -</li>
+						</a>
+						<a href="#">
+							<li>WORDPRESS -</li>
+						</a>
+						<a href="#">
+							<li>HTML -</li>
+						</a>
+						<a href="#">
+							<li>PLUGIN -</li>
+						</a>
+						<a href="#">
+							<li>PHOTOGRAPHY</li>
+						</a>
+					</ul>
+					
+				</div><!--end menu2-->
+
+			 <div class="wer2 clearfix">
+
+    			<div class="effect2 eff-3-1">
+  						<img src="images/portfolio1.jpg" alt="Effect #3" />
+  					<div class="caption2">
+  						<div class="dfff">
+	    					<h6>3D Design</h6>
+	    					<p>3D. Creative</p>
+  						</div><!--end dfff-->
+ 			 		</div><!--end caption2-->
+				</div><!--end effect2-->
+
+     			<div class="effect2 eff-3-1">
+  						<img src="images/portfolio2.jpg" alt="Effect #3" />
+  					<div class="caption2">
+  						<div class="dfff">
+	    					<h6>Creative Photography</h6>
+	    					<p>Photography. Digital</p>
+  						</div><!--end dfff-->
+ 					 </div><!--end caption2-->
+				</div><!--end effect2-->
+
+				<div class="effect2 eff-3-1">
+  						<img src="images/portfolio3.jpg" alt="Effect #3" />
+  					<div class="caption2">
+  						<div class="dfff">
+	    					<h6>Color illustration</h6>
+	    					<p>Illustration</p>
+  						</div><!--end dfff-->
+ 					 </div><!--end caption2-->
+				</div><!--end effect2-->
+
+				<div class="effect2 eff-3-1">
+  						<img src="images/portfolio4.jpg" alt="Effect #3" />
+  					<div class="caption2">
+  						<div class="dfff">
+	    					<h6>Digital Painting</h6>
+	    					<p>Creative, Photoshop</p>
+  						</div><!--end dfff-->
+ 			 		</div><!--end caption2-->
+				</div><!--end effect2-->
+
+				<div class="effect2 eff-3-1">
+  						<img src="images/portfolio5.jpg" alt="Effect #3" />
+  					<div class="caption2">
+  						<div class="dfff">
+	    					<h6>Product Photography</h6>
+	    					<p>Photography, Digital</p>
+  						</div><!--end dfff-->
+ 					 </div><!--end caption2-->
+				</div><!--end effect2-->
+
+				<div class="effect2 eff-3-1">
+  						<img src="images/portfolio7.jpg" alt="Effect #3" />
+  					<div class="caption2">
+  						<div class="dfff">
+	    					<h6>Minimal Design</h6>
+	    					<p>Minimal</p>
+  						</div><!--end dfff-->
+ 			 		</div><!--end caption2-->
+				</div><!--end effect2-->
+
+				<div class="effect2 eff-3-1">
+  						<img src="images/portfolio6.jpg" alt="Effect #3" />
+  					<div class="caption2">
+  						<div class="dfff">
+	    					<h6>Digital Painting2</h6>
+	    					<p>Adobe Photoshop, Digital</p>
+  						</div><!--end dfff-->
+ 			 		</div><!--end caption2-->
+				</div><!--end effect2-->
+
+				<div class="effect2 eff-3-1">
+  						<img src="images/portfolio8.jpg" alt="Effect #3" />
+  					<div class="caption2">
+  						<div class="dfff">
+	    					<h6>Interior Design</h6>
+	    					<p>3D Design</p>
+  						</div>	<!--end dfff-->
+ 			 		</div><!--end caption2-->
+				</div><!--end effect2-->
+
+			</div><!--end wer2-->
+
+
+			</section>
+		</div><!--end content-->
+
+		<div class="content2">
+			<section id="s_5">
+				<div class="clearfix">
+					<h3>TESTIMONIAL</h3>
+						<img class="str" src="images/str.png">
+							<div class="p">
+								<p>
+								“Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.”
+								</p>
+							</div>
+
+			
+				</div>
+				<div class="rad">
+					<div class="radius">
+						<img src="images/testimonial_img1.jpg">
+						<p class="name">Farhan Rizvi </p>
+						<p class="p2">ThemeExtra</p>
+					</div>
+
+					<div class="radius">
+						<img src="images/testimonial_img2.jpg">
+						<p class="name">Bushra Ahsani </p>
+						<p class="p2">Home Corporation</p>
+					</div>
+
+					<div class="radius">
+						<img src="images/testimonial_img3.jpg">
+						<p class="name">John Doe </p>
+						<p class="p2">Multiprex</p>
+					</div>
+				</div><!--end rad -->
+			</section>
+		</div><!--end content-->
+
+		<div class="paralax2">
+     		<div class="rut2"></div>
+		     	<div class="content2">
+			<section id="s_6">
+				<div class="clearfix">
+					<h3 class="white">GET IN TOUCH</h3>
+						<img class="str" src="images/str2.png">
+							<div class="p4">
+								<p>
+								Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.
+								</p>
+							</div><!--end p4-->
+
+			
+				</div><!--end clearfix-->
+				<div class="form">
+					<form>
+						<input type="text" name="name" value="Your name*">
+						<input type="text" name="Email*" value="Email addres*">
+						<input type="text" name="Subject" value="Subject*">
+						<textarea name="Message">Message*</textarea>
+						<input class="sand" type="submit" value="SAND MASSEGE">
+					</form>
+				</div>
+				<div class="end">
+						<div class="ert">
+							<div class="contact">
+						
+								<p class="tel"> <i class="fa fa-envelope"></i>jhondoe@email.com</p>
+							</div>
+							<div class="contact">
+						
+								<p class="tel"><i class="fa fa-phone"></i>000-111-22222</p>
+							</div>
+							<div class="contact">
+						
+								<p class="tel none"><i class="fa fa-skype"></i> john.doe</p>
+							</div>
+						</div><!--end ert-->
+				</div><!--end end-->
+			</section>
+		</div><!--end content2-->	
+     	</div><!--end paralax2-->
+
+     	<div class="fut">
+     		<div class="signature">
+     			<p>Signature</p>
+     		</div><!--end signature-->
+
+     		<div class="zxc">
+     			<a href="#" >John Doe</a>
+     			<p class="doe">@john_doe</p> 
+     			<p>6h</p>
+     			<p class="mnb">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+     		</div><!--end zxc-->
+
+     		<div class="button1">
+				<a href="#">
+					<button type="button"  class="soc"> FACEBOOK </button>
+				</a>
+				<a href="#">
+					<button type="button"  class="soc"> TWITTER </button>
+				</a>
+				<a href="#">
+					<button type="button"  class="soc"> GOOGLE+ </button>
+				</a>
+				<a href="#">
+					<button type="button"  class="soc"> LINKDIN </button>
+				</a>
+     		</div><!--end button1-->
+     	</div><!--end fut-->
+
+
+     	
+
+		
+	</div><!--end wrapper-->
+
+</body>
+</html>
